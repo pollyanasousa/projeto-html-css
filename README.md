@@ -26,3 +26,6 @@ Pinterest - Página de resultados de busca por "páginas web"
 
 ## Como visualizar
 Abra o arquivo `index.html` no navegador ou acesse pelo GitHub Pages.
+
+## GitHub Pages
+https://pollyanasousa.github.io/projeto-html-css/
