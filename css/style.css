@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    background-color: #fff;
+    border-right: 1px solid #efefef;
+    z-index: 100;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.sidebar ul li {
+    padding: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.sidebar > ul:first-child li:first-child a {
+    color: #e60023;
+}
+
+.sidebar-baixo {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar-baixo li a {
+    color: #000;
+}
+
+.busca {
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #fff;
+    white-space: nowrap;
+    margin-left: 50px;
+    width: calc(100% - 50px);
+}
+
+.campo {
+    display: inline-block;
+    width: 88%;
+    background-color: #e9e9e9;
+    border-radius: 15px;
+    padding: 18px 15px;
+    border: none;
+    position: relative;
+    vertical-align: middle;
+}
+
+.campo input {
+    border: none;
+    background: none;
+    width: 80%;
+    outline: none;
+}
+
+.campo input::placeholder {
+    color: #333;
+}
+
+.botao-x {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    position: absolute;
+    right: 130px;
+}
+
+.botao-pins {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.perfil {
+    display: inline-block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.perfil img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.carrossel {
+    padding: 10px 20px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    border-bottom: 1px solid #efefef;
+    position: relative;
+    scroll-behavior: smooth;
+    margin-left: 50px;
+    width: calc(100% - 50px);
+}
+
+.carrossel::-webkit-scrollbar {
+    display: none;
+}
+
+.carrossel button {
+    display: inline-block;
+    border: none;
+    border-radius: 15px;
+    padding: 0;
+    background-color: #fff;
+    cursor: pointer;
+    margin-right: 8px;
+    vertical-align: middle;
+    overflow: hidden;
+    height: 40px;
+}
+
+.carrossel button img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.carrossel button span {
+    padding: 0 12px;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+    height: 100%;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.botao-creativas span { background-color: #b2e0c8; }
+.botao-diseno span { background-color: #e8e8e8; }
+.botao-aesthetic span { background-color: #c5b4e3; }
+.botao-ideas span { background-color: #f4c2c2; }
+.botao-minimalista span { background-color: #e8e8e8; }
+.botao-fondos span { background-color: #1a1a2e; color: #fff; }
+.botao-dibujo span { background-color: #f4c2c2; }
+.botao-creativas-html span { background-color: #b2e0c8; }
+.botao-portadas span { background-color: #f4c2c2; }
+.botao-aburrido span { background-color: #c5b4e3; }
+.botao-design span { background-color: #b2d8f0; }
+.botao-paleta span { background-color: #f4c2c2; }
+.botao-ropa span { background-color: #e8e8e8; }
+.botao-modernas span { background-color: #b2e0c8; }
+.botao-creacion span { background-color: #f4c2c2; }
+.botao-educativas span { background-color: #e8e8e8; }
+.botao-elegantes span { background-color: #c5b4e3; }
+.botao-ejemplos span { background-color: #f4c2c2; }
+.botao-portafolio span { background-color: #b2d8f0; }
+.botao-colores span { background-color: #b2e0c8; }
+.botao-imagenes span { background-color: #e8e8e8; }
+.botao-interactivas span { background-color: #c5b4e3; }
+.botao-arquitectura span { background-color: #f4c2c2; }
+.botao-inspo span { background-color: #f4c2c2; }
+.botao-libros span { background-color: #b2e0c8; }
+
+.galeria {
+    margin-left: 50px;
+    width: calc(100% - 50px);
+    padding: 20px;
+    overflow: hidden;
+}
+
+.coluna {
+    float: left;
+    width: 14.28%;
+    padding: 0 5px;
+}
+
+.card {
+    margin-bottom: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+.video-thumb {
+    position: relative;
+}
+
+.video-thumb img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+.tempo {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
