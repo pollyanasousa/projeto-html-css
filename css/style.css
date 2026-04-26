@@ -217,11 +217,11 @@ body {
     border-radius: 15px;
 }
 
-.video-thumb {
+.video-frame {
     position: relative;
 }
 
-.video-thumb img {
+.video-frame img {
     width: 100%;
     display: block;
     border-radius: 15px;
